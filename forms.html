@@ -5,15 +5,104 @@
     <title>Формы обратной связи</title>
 </head>
 <body>
+<h1>Мы открыты для каждого!</h1>
+ <nav>
+   <ul>
+     <li><a href="index.html">Домашняя страница</a></li>
+     <li>
+       <a href="#">Коммерческие предложения</a>
+       <ul>
+         <li><a href="#">Хроника студсоветов 1978-2023</a></li>
+         <li><a href="#">Ваша реклама</a></li>
+       </ul>
+     </li>
+     <li><a href="forms.html">Заполнение форм</a></li>
+   </ul>
+ </nav>
+
+     <main>
+        <section>
+            <h2>Жалобная книга</h2>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Контактная информация</legend>
+      <label for="name">Имя:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Электронная почта:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="phone">Телефон:</label>
+      <input type="tel" id="phone" name="phone"><br><br>
+      <label for="blood">Группа крови:</label>
+      <input type="tel" id="blood" name="blood"><br><br>
+    </fieldset>
+    <fieldset>
+      <legend>Пожалуйста, пишите мне!</legend>
+      <label for="subject">Тема:</label>
+      <input type="text" id="subject" name="subject" required><br><br>
+      <label for="message">Сообщение:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+    </fieldset>
+    <fieldset>
+      <legend>Дополнительная информация</legend>
+      <label for="rating">Оценка:</label>
+      <select id="rating" name="rating">
+        <option value="5">Отлично</option>
+        <option value="4">Великолепно</option>
+        <option value="3">Потрясающе</option>
+        <option value="2">Восхитительно</option>
+        <option value="1">Фантастично</option>
+      </select><br><br>
+      <label for="improve">Как мы можем улучшиться?</label><br>
+      <textarea id="improve" name="improve" rows="4" cols="50"></textarea><br><br>
+    </fieldset>
+    <button type="submit">Отправить</button>
+    <button type="reset">Очистить</button>
+  </form>
+</section>
+ <h3>Это интересно</h3>
+<article>
+  <table border="1">
+    <caption>Сотрудники месяца</caption>
+    <tr>
+      <th>ФИО</th>
+      <th>Премии</th>
+    </tr>
+    <tr>
+      <td>Лимонова Е.П.</td>
+      <td>20000</td>
+    </tr>
+      <tr>
+      <td>Керенский Е.Ф.</td>
+      <td>12000</td>
+    </tr>
+  </table>
+</article>
+
+
+</main>
 
  <footer>
-   <h2>
-    Форма 202A
-   </h2>
-      <form action="/serverscript" method="get">
-     <input type="search" name="query" placeholder="Введите запрос">
-     <input type="submit" name="query" value="Искать!">
-   </form>
+     <code>
+          let <var>responses</var> = 0;
+     </code>
+  <address>
+  <strong>Список подготовил:</strong><br>
+<ol>
+        <li>Студент: Семён Валов</li>
+        <li>Курс: Международные взаимоотношения и торговля</li>
+        <li>Группа: БЭК202</li>
+</ol>
+
+</address>
+
  </footer>
+
+<aside>
+    <h3>Музыкальная пауза</h3>
+    <audio controls autoplay>
+  <source src="assets/sfx/MIRTH.wav" type="audio/ogg">
+Your browser does not support the audio element.
+</audio>
+</aside>
 </body>
 </html>
