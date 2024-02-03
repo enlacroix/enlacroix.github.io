@@ -34,6 +34,8 @@
       <input type="tel" id="phone" name="phone"><br><br>
       <label for="blood">Группа крови:</label>
       <input type="tel" id="blood" name="blood"><br><br>
+      <label for="start">День рождения вашей кошки:</label>
+      <input type="date" id="start" name="cat-start" value="2020-01-01" min="2010-01-01" max="2024-02-03" />
     </fieldset>
     <fieldset>
       <legend>Пожалуйста, пишите мне!</legend>
@@ -41,6 +43,8 @@
       <input type="text" id="subject" name="subject" required><br><br>
       <label for="message">Сообщение:</label><br>
       <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+     <label for="colorpicker">Укажите ваш любимый цвет:</label>
+     <input type="color" id="colorpicker" value="#0000ff">
     </fieldset>
     <fieldset>
       <legend>Дополнительная информация</legend>
@@ -54,6 +58,10 @@
       </select><br><br>
       <label for="improve">Как мы можем улучшиться?</label><br>
       <textarea id="improve" name="improve" rows="4" cols="50"></textarea><br><br>
+      <label for="avatar">Загрузите студенческий билет:</label>
+     <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" /><br><br>
+     <label for="url">Введите ваш любимый сайт по протоколу https://:</label>
+     <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required />
     </fieldset>
     <button type="submit">Отправить</button>
     <button type="reset">Очистить</button>
@@ -99,6 +107,9 @@
 
 <aside>
     <h3>Музыкальная пауза</h3>
+      <input type="range" id="volume" name="volume" min="1" max="12" step="2" />
+  <label for="volume">Настройте тональность:</label>
+    <p><b>Важно!</b></p>
     <audio controls autoplay>
   <source src="assets/sfx/MIRTH.wav" type="audio/ogg">
 Your browser does not support the audio element.
