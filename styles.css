@@ -122,10 +122,12 @@ a:hover {
 .img-cont {
   display: flex;
   justify-content: center;
+  flex-wrap: nowrap;
   /*align-items: center;*/
 }
 
 .img-cont img {
+  flex: 0 0 auto;
   width: 50%;
   height: 50%;
 }
