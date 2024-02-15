@@ -1,5 +1,5 @@
 html {
-    font-size: 14px;
+    font-size: 15px;
     background-size: cover;
     background: url('assets/img/loadBG.jpg') center;
 }
@@ -8,6 +8,12 @@ h1 {
     font-family: "Garamond", sans-serif; !important;
     color: wheat;
     font-size: 2em;
+}
+
+h2 {
+    font-family: "Garamond", sans-serif; !important;
+    color: wheat;
+    font-size: 1.5em;
 }
 
 /* Идентификаторный селектор (обращение по id) - применение в формах, большой заголовок - музыкальная пауза */
@@ -79,6 +85,10 @@ nav ul li ul li a:hover {
     background-color: navajowhite;
 }
 
+.table-of-contents {
+    background-color: #1e1a1a;
+    max-width: 800px;
+}
 
 a {
     color: white;
@@ -107,6 +117,17 @@ a:hover {
     height: 70%;
     overflow: hidden; /* обрезаем изображения  */
     margin-right: 10px; /* промежуток между изображениями */
+}
+
+.img-cont {
+  display: flex;
+  justify-content: center;
+  /*align-items: center;*/
+}
+
+.img-cont img {
+  width: 50%;
+  height: 50%;
 }
 
 .gallery .image img {
