@@ -3,19 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Формы обратной связи</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <h1>Мы открыты для каждого!</h1>
- <nav>
+<nav>
    <ul>
      <li><a href="index.html">Домашняя страница</a></li>
      <li>
-       <a href="#">Коммерческие предложения</a>
-       <ul>
-         <li><a href="#">Хроника студсоветов 1978-2023</a></li>
-         <li><a href="#">Ваша реклама</a></li>
-       </ul>
+            <a href="#">Статьи</a>
+            <ul>
+                <li><a href="#">Исследование структуры группы перестановок</a></li>
+                <li><a href="#">Гроккинг: последствия переобучения нейронных сетей</a></li>
+                <li><a href="#">Описание метода линейных углов</a></li>
+            </ul>
      </li>
+     <li>
+            <a href="#">Проекты</a>
+            <ul>
+                <li><a href="#">Нейрогеометрия</a></li>
+                <li><a href="#">"Sylvenarr: Origins": PvP бот ВК</a></li>
+                <li><a href="#">"Sylvenarr: Serpent Day": игра в жанре стратегия (Pygame)</a></li>
+                <li><a href="#">Построение FSM на примере системы поверхностей из игры Divinity OS2</a></li>
+            </ul>
+     </li>
+     <li>
+        <a href="#">Сервисы</a>
+        <ul>
+            <li><a href="#">Крестики-нолики</a></li>
+            <li><a href="#">Калькулятор перестановок</a></li>
+        </ul>
+     </li>
+     <li><a href="hse.html">Уголок студента</a> </li>
      <li><a href="forms.html">Заполнение форм</a></li>
    </ul>
  </nav>
@@ -89,31 +108,19 @@
 
 </main>
 
- <footer>
-     <code>
-          let <var>responses</var> = 0;
-     </code>
-  <address>
-  <strong>Список подготовил:</strong><br>
-<ol>
-        <li>Студент: Семён Валов</li>
-        <li>Курс: Международные взаимоотношения и торговля</li>
-        <li>Группа: БЭК202</li>
-</ol>
-
-</address>
-
- </footer>
+<footer>
+<p></p>
+</footer>
 
 <aside>
-    <h3>Музыкальная пауза</h3>
+    <h3 id="hugetext">Музыкальная пауза</h3>
       <input type="range" id="volume" name="volume" min="1" max="12" step="2" />
   <label for="volume">Настройте тональность:</label>
-    <p><b>Важно!</b></p>
+    <p class="goldhighlight"><b>Важно!</b></p>
     <audio controls autoplay>
   <source src="assets/sfx/MIRTH.wav" type="audio/ogg">
-Your browser does not support the audio element.
 </audio>
 </aside>
+
 </body>
 </html>

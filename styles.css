@@ -1,0 +1,210 @@
+html {
+    font-size: 14px;
+    background-size: cover;
+    background: url('assets/img/loadBG.jpg') center;
+}
+
+h1 {
+    font-family: "Garamond", sans-serif; !important;
+    color: wheat;
+    font-size: 2em;
+}
+
+/* Идентификаторный селектор (обращение по id) - применение в формах, большой заголовок - музыкальная пауза */
+#hugetext {
+    font-size: 36px;
+}
+
+/* Классовый селектор */
+.goldhighlight {
+    background-color: darkgoldenrod;
+}
+
+body {
+    font-family: "Comic Sans MS", sans-serif;
+    color: antiquewhite;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 1;
+    width: 200%;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    display: block;
+}
+
+nav ul li ul li a {
+    padding: 5px 15px;
+    color: #333;
+    width: 80%;
+}
+
+nav ul li ul li a:hover {
+    background-color: navajowhite;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Псевдо-класс (один из) */
+a:hover {
+    color: darkslateblue;
+}
+/* тоже примеры классовых селекторов */
+.gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* горизонтальная прокрутка */
+    max-width: 1080px;
+    margin: 0 auto; /* центировка */
+}
+
+.gallery .image {
+    flex: 0 0 auto;
+    padding: 10px;
+    width: 70%;
+    height: 70%;
+    overflow: hidden; /* обрезаем изображения  */
+    margin-right: 10px; /* промежуток между изображениями */
+}
+
+.gallery .image img {
+    width: 100%;
+    height: auto;
+}
+
+
+.notes {
+    column-count: 2;
+    column-gap: 20px;
+}
+
+.note {
+    break-inside: avoid; /* Предотвращаем разрыв блока заметки */
+    margin-bottom: 20px;
+    background-color: #181818;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #1e1a1a;
+    border-radius: 5px;
+    background-color: #833f3f;
+}
+
+/* Атрибутный селектор */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+
+/* стили только шириной экрана менее 900 пикселей */
+@media screen and (max-width: 900px) {
+    h1 {
+        background-color: #2f1313;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    width: 75%;
+    margin: 0 auto;
+}
+
+td, th {
+    border: 2px solid white;
+    padding: 8px;
+    transition: background-color 0.3s;
+}
+
+td:hover, th:hover {
+    background-color: midnightblue;
+}
+
+
+#specialist ul {
+    list-style: none; /* убираем стандартные маркеры */
+}
+
+#specialist ul li::before {
+    content: "\1F921"; /* юникод клоуна */
+    display: inline-block;
+    width: 2em;
+    margin-left: -1em;
+    font-size: 2em;
+    line-height: 1;
+}
+
+
+
+
+
+
