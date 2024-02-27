@@ -1,0 +1,106 @@
+html {
+    font-size: 15px;
+    background-size: cover;
+    background: url('assets/img/loadBG.jpg') center;
+}
+
+h2 {
+    font-family: "Garamond", sans-serif; !important;
+    color: wheat;
+    font-size: 1.5em;
+    break-inside: avoid-column;
+}
+
+
+#map {
+  width: 800px;
+  height: 600px;
+}
+
+body {
+    font-family: "Garamond", sans-serif;
+    color: wheat;
+    margin: 50px;
+    padding: 0;
+    column-count: 2; /* Разделение на две колонки */
+    column-gap: 20px; /* Расстояние между колонками */
+}
+
+#chat-container {
+    flex: 0 0 auto;
+    width: 600px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#chat-messages {
+    height: 200px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+#input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+}
+
+#message-input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+#send-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #45a049;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#audio-upload {
+    background-color: #b73333;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#audio-upload:hover {
+    background-color: #286090;
+}
+
+.bot-msg {
+    background-color: #6B3E85; /* Темное фиолетовое */
+    color: navajowhite;
+    border-radius: 10px; /* Скругление краев */
+    padding: 10px; /* Отступы внутри блока */
+    margin-left: auto; /* Выравнивание по правому краю */
+    margin-bottom: 10px; /* Отступ снизу */
+    width: 250px;
+    word-wrap: break-word;
+}
+
+.user-msg {
+    background-color: #540218; /* Темное фиолетовое */
+    color: #dea9a9; /* Белый цвет текста */
+    border-radius: 10px; /* Скругление краев */
+    padding: 10px; /* Отступы внутри блока */
+    margin-right: auto; /* Выравнивание по правому краю */
+    margin-bottom: 10px; /* Отступ снизу */
+    width: 250px;
+    word-wrap: break-word;
+}

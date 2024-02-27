@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="styles2.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <meta charset="UTF-8">
+  <title>Испытываем JavaScript</title>
+</head>
+<body>
+<h1>JavaScript в действии</h1>
+
+<h2>Интерактивная карта</h2>
+<div id="map"></div>
+
+<h2>Весёлый помощник</h2>
+
+<div id="chat-container">
+    <div id="chat-messages"></div>
+    <div id="input-container">
+        <textarea id="message-input" placeholder="Введите сообщение..."></textarea>
+        <input type="file" accept="audio/*" id="audio-input">
+        <label for="audio-input" id="audio-upload">Выбрать аудиофайл</label>
+        <button id="send-button">Отправить</button>
+    </div>
+</div>
+<p>Команды: привет, пока, силомер</p>
+</body>
+<script src="polygon.js"> </script>
+</html>
