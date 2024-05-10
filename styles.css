@@ -218,7 +218,7 @@ td:hover, th:hover {
 }
 
 #specialist ul li::before {
-    content: "\1F921"; /* юникод клоуна */
+    /*content: "\1F924"; !* юникод клоуна *!*/
     display: inline-block;
     width: 2em;
     margin-left: -1em;
