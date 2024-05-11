@@ -1,120 +1,120 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="RP">
-    <title>Личная страница студента ВШЭ</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        h1 {
-            color: blue !important;
-        }
-        p.note {
-            font-style: italic;
-        }
-        /* Псевдо-элемент */
-        p.note::first-letter {
-            font-size: 36px;
-            color: wheat;
-        }
-    </style>
-</head>
-<body>
+<!--<!DOCTYPE html>-->
+<!--<html lang="ru">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="author" content="RP">-->
+<!--    <title>Личная страница студента ВШЭ</title>-->
+<!--    <link rel="stylesheet" href="styles.css">-->
+<!--    <style>-->
+<!--        h1 {-->
+<!--            color: blue !important;-->
+<!--        }-->
+<!--        p.note {-->
+<!--            font-style: italic;-->
+<!--        }-->
+<!--        /* Псевдо-элемент */-->
+<!--        p.note::first-letter {-->
+<!--            font-size: 36px;-->
+<!--            color: wheat;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
 
- <header>
-   <h1>
-    Живой журнал студента
-   </h1>
- </header>
-
-
-
-<nav>
-   <ul>
-     <li><a href="index.html">Домашняя страница</a></li>
-     <li>
-            <a href="#">Статьи</a>
-            <ul>
-                <li><a href="#">Исследование структуры группы перестановок</a></li>
-                <li><a href="#">Гроккинг: последствия переобучения нейронных сетей</a></li>
-                <li><a href="#">Описание метода линейных углов</a></li>
-            </ul>
-     </li>
-     <li>
-            <a href="#">Проекты</a>
-            <ul>
-                <li><a href="#">Нейрогеометрия</a></li>
-                <li><a href="#">"Sylvenarr: Origins": PvP бот ВК</a></li>
-                <li><a href="#">"Sylvenarr: Serpent Day": игра в жанре стратегия (Pygame)</a></li>
-                <li><a href="#">Построение FSM на примере системы поверхностей из игры Divinity OS2</a></li>
-            </ul>
-     </li>
-     <li>
-        <a href="#">Сервисы</a>
-        <ul>
-            <li><a href="#">Крестики-нолики</a></li>
-            <li><a href="#">Калькулятор перестановок</a></li>
-        </ul>
-     </li>
-     <li><a href="hse.html">Уголок студента</a> </li>
-     <li><a href="forms.html">Заполнение форм</a></li>
-   </ul>
- </nav>
-<main>
-    <section>
-        <h2>Моральный облик студента</h2>
-
-Студент должен быть вежлив, опрятен, смел и ходить на лекции.
-<figure>
-    <img src="https://thumb.tildacdn.com/tild6338-3133-4164-b463-303231383962/-/resize/740x/-/format/webp/IMG_4073.PNG" alt="Студент ВШЭ" height="300" width="300">
-    <figcaption>Рис. 1. Студент ВШЭ на парах по дискретной математике</figcaption>
-</figure>
-<blockquote cite="https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%B5%D0%B9%D1%82%D0%B5%D0%BC,_%D0%94%D0%B6%D0%B5%D0%B9%D1%81%D0%BE%D0%BD">
-Студенты <abbr title="Высшая Школа Экономики" >ВШЭ</abbr> стремятся к активному обучению и развитию, участвуют в научных исследованиях и студенческих проектах.
-</blockquote>
-</section>
-<section>
-   <h2 id="main-heading">Наша гордость</h2>
-    <figure>
-    <img src="https://api.time.com/wp-content/uploads/2019/03/kitten-report.jpg?w=784&amp;quality=85" alt="Студент ВШЭ" height="200" width="200">
-    <img src="https://api.time.com/wp-content/uploads/2019/03/kitten-report.jpg?w=784&amp;quality=85" alt="Студент ВШЭ" height="200" width="200">
-    <img src="https://api.time.com/wp-content/uploads/2019/03/kitten-report.jpg?w=784&amp;quality=85" alt="Студент ВШЭ" height="200" width="200">
-    <img src="https://api.time.com/wp-content/uploads/2019/03/kitten-report.jpg?w=784&amp;quality=85" alt="Студент ВШЭ" height="200" width="200">
-        <figcaption>Рис. 2. Пример идеальной посещаемости</figcaption>
-</figure>
-<div>
-  <p class="note" style="font-size: 20px;">Видео (абзац с классом note):</p>
-<iframe width="420" height="315"
-src="https://www.youtube.com/embed/tgbNymZ7vqY">
-</iframe>
-</div>
-<div style="background-color: darkslategrey; padding: 30px;">
-    <p>Цветной фон и внутренние отступы 30px.</p>
-</div>
-</section>
-<label for="chck">Одобряете?</label>
-<input type="checkbox" id="chck" name="chck"><br>
-</main>
-
-<footer>
-<h3>
-ИСТОРИЧЕСКИЙ УГОЛОК
-</h3>
-<img src="https://thumb.tildacdn.com/tild3132-3463-4131-b136-393637653066/-/format/webp/Group_3.png" alt="Стол" width="200" height="200">
- <p>
- <b>1994</b> <a href="https://www.hse.ru/docs/11032053.html">Приказ</a> государственного комитета Российской Федерации по высшему образованию "Об организации аспирантуры в Высшей школе экономики"
-от 14 ноября 1994 года № 1095
- </p>
-<p>
-<b>1992</b>	<a href="https://www.hse.ru/docs/21042493.html">Постановление</a> Правительства Российской Федерации "О создании Высшей школы экономики"
-от 27 ноября 1992 года № 917
-</p>
-<p>
-<i>Все права защищены</i>
-</p>
-<address>Контактная информация: <a href="mailto:romanov@example.com">romanov@example.com</a></address>
- </footer>
+<!-- <header>-->
+<!--   <h1>-->
+<!--    Живой журнал студента-->
+<!--   </h1>-->
+<!-- </header>-->
 
 
-</body>
-</html>
+
+<!--<nav>-->
+<!--   <ul>-->
+<!--     <li><a href="index.html">Домашняя страница</a></li>-->
+<!--     <li>-->
+<!--            <a href="#">Статьи</a>-->
+<!--            <ul>-->
+<!--                <li><a href="#">Исследование структуры группы перестановок</a></li>-->
+<!--                <li><a href="#">Гроккинг: последствия переобучения нейронных сетей</a></li>-->
+<!--                <li><a href="#">Описание метода линейных углов</a></li>-->
+<!--            </ul>-->
+<!--     </li>-->
+<!--     <li>-->
+<!--            <a href="#">Проекты</a>-->
+<!--            <ul>-->
+<!--                <li><a href="#">Нейрогеометрия</a></li>-->
+<!--                <li><a href="#">"Sylvenarr: Origins": PvP бот ВК</a></li>-->
+<!--                <li><a href="#">"Sylvenarr: Serpent Day": игра в жанре стратегия (Pygame)</a></li>-->
+<!--                <li><a href="#">Построение FSM на примере системы поверхностей из игры Divinity OS2</a></li>-->
+<!--            </ul>-->
+<!--     </li>-->
+<!--     <li>-->
+<!--        <a href="#">Сервисы</a>-->
+<!--        <ul>-->
+<!--            <li><a href="#">Крестики-нолики</a></li>-->
+<!--            <li><a href="#">Калькулятор перестановок</a></li>-->
+<!--        </ul>-->
+<!--     </li>-->
+<!--     <li><a href="hse.html">Уголок студента</a> </li>-->
+<!--     <li><a href="forms.html">Заполнение форм</a></li>-->
+<!--   </ul>-->
+<!-- </nav>-->
+<!--<main>-->
+<!--    <section>-->
+<!--        <h2>Моральный облик студента</h2>-->
+
+<!--Студент должен быть вежлив, опрятен, смел и ходить на лекции.-->
+<!--<figure>-->
+<!--    <img src="https://thumb.tildacdn.com/tild6338-3133-4164-b463-303231383962/-/resize/740x/-/format/webp/IMG_4073.PNG" alt="Студент ВШЭ" height="300" width="300">-->
+<!--    <figcaption>Рис. 1. Студент ВШЭ на парах по дискретной математике</figcaption>-->
+<!--</figure>-->
+<!--<blockquote cite="https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%B5%D0%B9%D1%82%D0%B5%D0%BC,_%D0%94%D0%B6%D0%B5%D0%B9%D1%81%D0%BE%D0%BD">-->
+<!--Студенты <abbr title="Высшая Школа Экономики" >ВШЭ</abbr> стремятся к активному обучению и развитию, участвуют в научных исследованиях и студенческих проектах.-->
+<!--</blockquote>-->
+<!--</section>-->
+<!--<section>-->
+<!--   <h2 id="main-heading">Наша гордость</h2>-->
+<!--    <figure>-->
+<!--    <img src="https://api.time.com/wp-content/uploads/2019/03/kitten-report.jpg?w=784&amp;quality=85" alt="Студент ВШЭ" height="200" width="200">-->
+<!--    <img src="https://api.time.com/wp-content/uploads/2019/03/kitten-report.jpg?w=784&amp;quality=85" alt="Студент ВШЭ" height="200" width="200">-->
+<!--    <img src="https://api.time.com/wp-content/uploads/2019/03/kitten-report.jpg?w=784&amp;quality=85" alt="Студент ВШЭ" height="200" width="200">-->
+<!--    <img src="https://api.time.com/wp-content/uploads/2019/03/kitten-report.jpg?w=784&amp;quality=85" alt="Студент ВШЭ" height="200" width="200">-->
+<!--        <figcaption>Рис. 2. Пример идеальной посещаемости</figcaption>-->
+<!--</figure>-->
+<!--<div>-->
+<!--  <p class="note" style="font-size: 20px;">Видео (абзац с классом note):</p>-->
+<!--<iframe width="420" height="315"-->
+<!--src="https://www.youtube.com/embed/tgbNymZ7vqY">-->
+<!--</iframe>-->
+<!--</div>-->
+<!--<div style="background-color: darkslategrey; padding: 30px;">-->
+<!--    <p>Цветной фон и внутренние отступы 30px.</p>-->
+<!--</div>-->
+<!--</section>-->
+<!--<label for="chck">Одобряете?</label>-->
+<!--<input type="checkbox" id="chck" name="chck"><br>-->
+<!--</main>-->
+
+<!--<footer>-->
+<!--<h3>-->
+<!--ИСТОРИЧЕСКИЙ УГОЛОК-->
+<!--</h3>-->
+<!--<img src="https://thumb.tildacdn.com/tild3132-3463-4131-b136-393637653066/-/format/webp/Group_3.png" alt="Стол" width="200" height="200">-->
+<!-- <p>-->
+<!-- <b>1994</b> <a href="https://www.hse.ru/docs/11032053.html">Приказ</a> государственного комитета Российской Федерации по высшему образованию "Об организации аспирантуры в Высшей школе экономики"-->
+<!--от 14 ноября 1994 года № 1095-->
+<!-- </p>-->
+<!--<p>-->
+<!--<b>1992</b>	<a href="https://www.hse.ru/docs/21042493.html">Постановление</a> Правительства Российской Федерации "О создании Высшей школы экономики"-->
+<!--от 27 ноября 1992 года № 917-->
+<!--</p>-->
+<!--<p>-->
+<!--<i>Все права защищены</i>-->
+<!--</p>-->
+<!--<address>Контактная информация: <a href="mailto:romanov@example.com">romanov@example.com</a></address>-->
+<!-- </footer>-->
+
+
+<!--</body>-->
+<!--</html>-->

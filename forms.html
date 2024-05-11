@@ -1,126 +1,126 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Формы обратной связи</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<h1>Мы открыты для каждого!</h1>
-<nav>
-   <ul>
-     <li><a href="index.html">Домашняя страница</a></li>
-     <li>
-            <a href="#">Статьи</a>
-            <ul>
-                <li><a href="#">Исследование структуры группы перестановок</a></li>
-                <li><a href="#">Гроккинг: последствия переобучения нейронных сетей</a></li>
-                <li><a href="#">Описание метода линейных углов</a></li>
-            </ul>
-     </li>
-     <li>
-            <a href="#">Проекты</a>
-            <ul>
-                <li><a href="#">Нейрогеометрия</a></li>
-                <li><a href="#">"Sylvenarr: Origins": PvP бот ВК</a></li>
-                <li><a href="#">"Sylvenarr: Serpent Day": игра в жанре стратегия (Pygame)</a></li>
-                <li><a href="#">Построение FSM на примере системы поверхностей из игры Divinity OS2</a></li>
-            </ul>
-     </li>
-     <li>
-        <a href="#">Сервисы</a>
-        <ul>
-            <li><a href="#">Крестики-нолики</a></li>
-            <li><a href="#">Калькулятор перестановок</a></li>
-        </ul>
-     </li>
-     <li><a href="hse.html">Уголок студента</a> </li>
-     <li><a href="forms.html">Заполнение форм</a></li>
-   </ul>
- </nav>
+<!--<!DOCTYPE html>-->
+<!--<html lang="ru">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Формы обратной связи</title>-->
+<!--    <link rel="stylesheet" href="styles.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Мы открыты для каждого!</h1>-->
+<!--<nav>-->
+<!--   <ul>-->
+<!--     <li><a href="index.html">Домашняя страница</a></li>-->
+<!--     <li>-->
+<!--            <a href="#">Статьи</a>-->
+<!--            <ul>-->
+<!--                <li><a href="#">Исследование структуры группы перестановок</a></li>-->
+<!--                <li><a href="#">Гроккинг: последствия переобучения нейронных сетей</a></li>-->
+<!--                <li><a href="#">Описание метода линейных углов</a></li>-->
+<!--            </ul>-->
+<!--     </li>-->
+<!--     <li>-->
+<!--            <a href="#">Проекты</a>-->
+<!--            <ul>-->
+<!--                <li><a href="#">Нейрогеометрия</a></li>-->
+<!--                <li><a href="#">"Sylvenarr: Origins": PvP бот ВК</a></li>-->
+<!--                <li><a href="#">"Sylvenarr: Serpent Day": игра в жанре стратегия (Pygame)</a></li>-->
+<!--                <li><a href="#">Построение FSM на примере системы поверхностей из игры Divinity OS2</a></li>-->
+<!--            </ul>-->
+<!--     </li>-->
+<!--     <li>-->
+<!--        <a href="#">Сервисы</a>-->
+<!--        <ul>-->
+<!--            <li><a href="#">Крестики-нолики</a></li>-->
+<!--            <li><a href="#">Калькулятор перестановок</a></li>-->
+<!--        </ul>-->
+<!--     </li>-->
+<!--     <li><a href="hse.html">Уголок студента</a> </li>-->
+<!--     <li><a href="forms.html">Заполнение форм</a></li>-->
+<!--   </ul>-->
+<!-- </nav>-->
 
-     <main>
-        <section>
-            <h2>Жалобная книга</h2>
-  <form action="#" method="post">
-    <fieldset>
-      <legend>Контактная информация</legend>
-      <label for="name">Имя:</label>
-      <input type="text" id="name" name="name" required><br><br>
-      <label for="email">Электронная почта:</label>
-      <input type="email" id="email" name="email" required><br><br>
-      <label for="phone">Телефон:</label>
-      <input type="tel" id="phone" name="phone"><br><br>
-      <label for="blood">Группа крови:</label>
-      <input type="tel" id="blood" name="blood"><br><br>
-      <label for="start">День рождения вашей кошки:</label>
-      <input type="date" id="start" name="cat-start" value="2020-01-01" min="2010-01-01" max="2024-02-03" />
-    </fieldset>
-    <fieldset>
-      <legend>Пожалуйста, пишите мне!</legend>
-      <label for="subject">Тема:</label>
-      <input type="text" id="subject" name="subject" required><br><br>
-      <label for="message">Сообщение:</label><br>
-      <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-     <label for="colorpicker">Укажите ваш любимый цвет:</label>
-     <input type="color" id="colorpicker" value="#0000ff">
-    </fieldset>
-    <fieldset>
-      <legend>Дополнительная информация</legend>
-      <label for="rating">Оценка:</label>
-      <select id="rating" name="rating">
-        <option value="5">Отлично</option>
-        <option value="4">Великолепно</option>
-        <option value="3">Потрясающе</option>
-        <option value="2">Восхитительно</option>
-        <option value="1">Фантастично</option>
-      </select><br><br>
-      <label for="improve">Как мы можем улучшиться?</label><br>
-      <textarea id="improve" name="improve" rows="4" cols="50"></textarea><br><br>
-      <label for="avatar">Загрузите студенческий билет:</label>
-     <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" /><br><br>
-     <label for="url">Введите ваш любимый сайт по протоколу https://:</label>
-     <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required />
-    </fieldset>
-    <button type="submit">Отправить</button>
-    <button type="reset">Очистить</button>
-  </form>
-</section>
- <h3>Это интересно</h3>
-<article>
-  <table border="1">
-    <caption>Сотрудники месяца</caption>
-    <tr>
-      <th>ФИО</th>
-      <th>Премии</th>
-    </tr>
-    <tr>
-      <td>Лимонова Е.П.</td>
-      <td>20000</td>
-    </tr>
-      <tr>
-      <td>Керенский Е.Ф.</td>
-      <td>12000</td>
-    </tr>
-  </table>
-</article>
+<!--     <main>-->
+<!--        <section>-->
+<!--            <h2>Жалобная книга</h2>-->
+<!--  <form action="#" method="post">-->
+<!--    <fieldset>-->
+<!--      <legend>Контактная информация</legend>-->
+<!--      <label for="name">Имя:</label>-->
+<!--      <input type="text" id="name" name="name" required><br><br>-->
+<!--      <label for="email">Электронная почта:</label>-->
+<!--      <input type="email" id="email" name="email" required><br><br>-->
+<!--      <label for="phone">Телефон:</label>-->
+<!--      <input type="tel" id="phone" name="phone"><br><br>-->
+<!--      <label for="blood">Группа крови:</label>-->
+<!--      <input type="tel" id="blood" name="blood"><br><br>-->
+<!--      <label for="start">День рождения вашей кошки:</label>-->
+<!--      <input type="date" id="start" name="cat-start" value="2020-01-01" min="2010-01-01" max="2024-02-03" />-->
+<!--    </fieldset>-->
+<!--    <fieldset>-->
+<!--      <legend>Пожалуйста, пишите мне!</legend>-->
+<!--      <label for="subject">Тема:</label>-->
+<!--      <input type="text" id="subject" name="subject" required><br><br>-->
+<!--      <label for="message">Сообщение:</label><br>-->
+<!--      <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>-->
+<!--     <label for="colorpicker">Укажите ваш любимый цвет:</label>-->
+<!--     <input type="color" id="colorpicker" value="#0000ff">-->
+<!--    </fieldset>-->
+<!--    <fieldset>-->
+<!--      <legend>Дополнительная информация</legend>-->
+<!--      <label for="rating">Оценка:</label>-->
+<!--      <select id="rating" name="rating">-->
+<!--        <option value="5">Отлично</option>-->
+<!--        <option value="4">Великолепно</option>-->
+<!--        <option value="3">Потрясающе</option>-->
+<!--        <option value="2">Восхитительно</option>-->
+<!--        <option value="1">Фантастично</option>-->
+<!--      </select><br><br>-->
+<!--      <label for="improve">Как мы можем улучшиться?</label><br>-->
+<!--      <textarea id="improve" name="improve" rows="4" cols="50"></textarea><br><br>-->
+<!--      <label for="avatar">Загрузите студенческий билет:</label>-->
+<!--     <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" /><br><br>-->
+<!--     <label for="url">Введите ваш любимый сайт по протоколу https://:</label>-->
+<!--     <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required />-->
+<!--    </fieldset>-->
+<!--    <button type="submit">Отправить</button>-->
+<!--    <button type="reset">Очистить</button>-->
+<!--  </form>-->
+<!--</section>-->
+<!-- <h3>Это интересно</h3>-->
+<!--<article>-->
+<!--  <table border="1">-->
+<!--    <caption>Сотрудники месяца</caption>-->
+<!--    <tr>-->
+<!--      <th>ФИО</th>-->
+<!--      <th>Премии</th>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td>Лимонова Е.П.</td>-->
+<!--      <td>20000</td>-->
+<!--    </tr>-->
+<!--      <tr>-->
+<!--      <td>Керенский Е.Ф.</td>-->
+<!--      <td>12000</td>-->
+<!--    </tr>-->
+<!--  </table>-->
+<!--</article>-->
 
 
-</main>
+<!--</main>-->
 
-<footer>
-<p></p>
-</footer>
+<!--<footer>-->
+<!--<p></p>-->
+<!--</footer>-->
 
-<aside>
-    <h3 id="hugetext">Музыкальная пауза</h3>
-      <input type="range" id="volume" name="volume" min="1" max="12" step="2" />
-  <label for="volume">Настройте тональность:</label>
-    <p class="goldhighlight"><b>Важно!</b></p>
-    <audio controls autoplay>
-  <source src="assets/sfx/MIRTH.wav" type="audio/ogg">
-</audio>
-</aside>
+<!--<aside>-->
+<!--    <h3 id="hugetext">Музыкальная пауза</h3>-->
+<!--      <input type="range" id="volume" name="volume" min="1" max="12" step="2" />-->
+<!--  <label for="volume">Настройте тональность:</label>-->
+<!--    <p class="goldhighlight"><b>Важно!</b></p>-->
+<!--    <audio controls autoplay>-->
+<!--  <source src="assets/sfx/MIRTH.wav" type="audio/ogg">-->
+<!--</audio>-->
+<!--</aside>-->
 
-</body>
-</html>
+<!--</body>-->
+<!--</html>-->
