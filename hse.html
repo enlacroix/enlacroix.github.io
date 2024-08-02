@@ -118,3 +118,83 @@
 
 <!--</body>-->
 <!--</html>-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видео Поиск</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .topbar {
+            width: 100%;
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        .topbar img {
+            height: 40px;
+        }
+        .topbar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .container {
+            width: 70%;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .container input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .container button {
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+        .container iframe {
+            width: 1024px;
+            height: 768px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+<!--        <img src="image1.jpg" alt="Image 1">-->
+        <h1>Добро пожаловать</h1>
+<!--        <img src="image2.jpg" alt="Image 2">-->
+    </div>
+    <div class="container">
+        <input type="text" id="youtubeLink" placeholder="Вставьте ссылку на YouTube">
+        <button onclick="updateVideo()">Вставить видео</button>
+        <iframe id="videoFrame" src="" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <script>
+        function updateVideo() {
+            const youtubeLink = document.getElementById('youtubeLink').value;
+            const videoFrame = document.getElementById('videoFrame');
+
+            if (youtubeLink) {
+                const videoId = youtubeLink.split('/').pop().split('?')[0];
+                videoFrame.src = `https://www.youtube.com/embed/${videoId}`;
+            }
+        }
+    </script>
+</body>
+</html>
